@@ -1,3 +1,7 @@
+import random
+import sys
+from time import sleep
+
 from tweepy import API, OAuthHandler
 
 from manverbing import manverbing
@@ -16,4 +20,7 @@ def post():
 
 
 if __name__ == '__main__':
+    if '-wait' in sys.argv:
+        sleep(60 * 60 * random.random())
+
     post()
