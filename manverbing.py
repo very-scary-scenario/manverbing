@@ -6,7 +6,7 @@ from inflect import engine
 
 inflect = engine()
 
-FILE_NAME = 'words.txt'
+FILE_NAME = os.path.join(os.path.dirname(__file__), 'words.txt')
 
 
 def manverbing():
